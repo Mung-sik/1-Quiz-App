@@ -1,1 +1,125 @@
+* {
+box-sizing: border-box;
+font-family:Arial, Helvetica, sans-serif; 
+}
+
+body {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.start-btn {
+  display: none;
+  border:3px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* infor-container */
+.infor-container_list {
+  display: none;
+  border-bottom: 3px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.infor-container_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#startPageBtn, #qustionPageBtn { 
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+#startPageBtn:hover, #qustionPageBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+#startPageBtn {
+  margin-right: 30px;
+}
+
+/* main container */
+
+#mainContainer { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+ 
+}
+
+#codeQuestionContainer {
+  display: grid;
+  align-items: center;
+  justify-self: center;
+}
+
+#questionContainer {
+text-align: center;
+}
+
+#codeContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#answerContainer :nth-child(n){
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.answers {
+  cursor: pointer;
+}
+#nextButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nextPageBtn {
+ margin-top: 20px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+/* final container */
 
