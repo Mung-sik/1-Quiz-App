@@ -6,56 +6,91 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./index.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <div class="container">
-    <!-- start page -->
+  <!-- Start Quiz Button -->
 
-    <button id="startBtn" class="start-btn">Start</button>
+  <div class="start-button"><button>Start Quiz</button></div>
 
-    <!-- information page -->
-    <div id=inforContainer class="hide">
-      <div id="inforListContainer" class="infor-container_list">
-        <div class="infor-list">1. 각 문항 당 시간 제한은 10초입니다.</div>
-        <div class="infor-list">2. 마지막에 총점을 보여줍니다.</div>
-        <div class="infor-list">3. 게임을 시작하고 싶으면 start버튼을 누르세요.</div>
-      </div>
-      <div id=inforBtnContainer class="infor-container_btn">
-        <button id="startPageBtn">Page Before </button>
-        <button id="qustionPageBtn">Page Next</button>
-      </div>
+  <!-- Information Box -->
+
+  <div class="information-box">
+    <div class="information-title">
+      <span>Some Rules here :)</span>
     </div>
+    <div class="information-list">
+      <div class="information-content">1. This is my first mini project</div>
+      <div class="information-content">2. So please just enjoy it😉 </div>
+      <div class="information-content">3. Are you ready? </div>
+      <div class="information-content">4. Let's go! 👏</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue?</button>
+    </div>
+  </div>
 
-    <!-- main page -->
+  <!-- Quiz Box -->
 
-    <div id="mainContainer" class="hide">
-      <div id="codeQuestionContainer">
-        <div id="questionContainer">question</div>
-        <div id="codeContainer">code</div>
-        <div id="nextButtonContainer">
-          <button id="nextPageBtn">Next</button>
+  <div class="quiz-box">
+    <header>
+      <div class="title">Quiz Application</div>
+      <div class="timer">
+        <div class="time-text">Time left</div>
+        <div class="timer-sec">15</div>
+      </div>
+      <div class="timer_line"></div>
+    </header>
+    <section>
+      <div class="question-text">
+        <!-- <span>What does HTML stand for?</span> -->
+      </div>
+      <div class="option_list">
+        <!-- <div class="option">
+          <span>Hyper Text Markup Language</span>
+          <div class="icon tick"><i class="fas fa-check"></i></div>
         </div>
+        <div class="option">
+          <span>Hyper Text Markup Language</span>
+          <div class="icon cross"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="option">
+          <span>Hyper Text Markup Language</span>
+        </div>
+        <div class="option">
+          <span>Hyper Text Markup Language</span>
+        </div> -->
+    </section>
+
+    <!-- quiz box footer -->
+
+    <footer>
+      <div class="total-question">
+        2 of 5 Question
       </div>
-    </div>
-    <div id="answerContainer">
-      <div class="answers" id="firstAnswer">111111111</div>
-      <div class="answers" id="secondAnswer">2222222</div>
-      <div class="answers" id="thirdAnswer">333333333333</div>
-      <div class="answers" id="fourthAnswer">444444444444444</div>
-    </div>
+      <button class="next-button">Next Question</button>
+    </footer>
   </div>
 
-  <!-- final page -->
+  <!-- result box -->
 
-  <div id="finalContainer" class="hide">
-    <button class="quit-btn">quit</button>
-    <button class="infor-btn">infor</butoon>
+  <div class="result-box">
+    <div class="result-icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete-text">You've completed the Quiz</div>
+    <div class="score-text">
+      <!-- <span> and Sorry, You got only <p>2</p> out of <p>5</p></span> -->
+    </div>
+    <div class="result-button">
+      <button class="result-quit">Quit</button>
+    </div>
   </div>
-  </div>
-  <script src="./index.js"></script>
+  <script src="./quizapp.js"></script>
+  <script src="./question.js"></script>
 </body>
 
 </html>
