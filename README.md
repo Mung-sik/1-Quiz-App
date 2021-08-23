@@ -1,3 +1,2 @@
-# Mungsik_container
+# 1. Quiz App
 
-This container is where I save my mini project.
